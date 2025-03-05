@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4D77C132D662C1E002F5311 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D77C0D2D662C1E002F5311 /* Preview Assets.xcassets */; };
+		F4D77C142D662C1E002F5311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D77C0F2D662C1E002F5311 /* Assets.xcassets */; };
+		F4D77C162D662C1E002F5311 /* HyperBallSmashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C112D662C1E002F5311 /* HyperBallSmashApp.swift */; };
+		F4D77C1D2D662DE8002F5311 /* CoordinatorViewHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C1C2D662DE7002F5311 /* CoordinatorViewHBS.swift */; };
+		F4D77C1F2D662E2D002F5311 /* SplashViewHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C1E2D662E2B002F5311 /* SplashViewHBS.swift */; };
+		F4D77C212D662E3D002F5311 /* GameViewHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C202D662E34002F5311 /* GameViewHBS.swift */; };
+		F4D77C232D662E4A002F5311 /* ShopViewHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C222D662E40002F5311 /* ShopViewHBS.swift */; };
+		F4D77C252D662E54002F5311 /* LevelsViewHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C242D662E4F002F5311 /* LevelsViewHBS.swift */; };
+		F4D77C272D662EC5002F5311 /* MenuViewHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C262D662EBB002F5311 /* MenuViewHBS.swift */; };
+		F4D77C292D662ED7002F5311 /* OnboardingViewHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C282D662ECD002F5311 /* OnboardingViewHBS.swift */; };
+		F4D77C2D2D662F04002F5311 /* FontManagerHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C2C2D662EFE002F5311 /* FontManagerHBS.swift */; };
+		F4D77C2F2D662F0E002F5311 /* ShopManagerHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C2E2D662F07002F5311 /* ShopManagerHBS.swift */; };
+		F4D77C312D662F1B002F5311 /* MusicManagerHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C302D662F14002F5311 /* MusicManagerHBS.swift */; };
+		F4D77C332D662F2C002F5311 /* GameManagerHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C322D662F27002F5311 /* GameManagerHBS.swift */; };
+		F4D77C362D6636CB002F5311 /* GameSceneHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C352D6636C3002F5311 /* GameSceneHBS.swift */; };
+		F4D77C382D6650CC002F5311 /* Digitalt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4D77C372D6650CC002F5311 /* Digitalt.ttf */; };
+		F4D77C3B2D6653E1002F5311 /* LS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D77C3A2D6653E1002F5311 /* LS.storyboard */; };
+		F4D77C3D2D672373002F5311 /* ColorManagerHBS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D77C3C2D67236C002F5311 /* ColorManagerHBS.swift */; };
+		F4D77C3F2D679F2F002F5311 /* musicHBS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F4D77C3E2D679F2F002F5311 /* musicHBS.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4D77BFC2D662C06002F5311 /* HyperBallSmash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HyperBallSmash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D77C0D2D662C1E002F5311 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4D77C0F2D662C1E002F5311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4D77C112D662C1E002F5311 /* HyperBallSmashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperBallSmashApp.swift; sourceTree = "<group>"; };
+		F4D77C1C2D662DE7002F5311 /* CoordinatorViewHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorViewHBS.swift; sourceTree = "<group>"; };
+		F4D77C1E2D662E2B002F5311 /* SplashViewHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewHBS.swift; sourceTree = "<group>"; };
+		F4D77C202D662E34002F5311 /* GameViewHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewHBS.swift; sourceTree = "<group>"; };
+		F4D77C222D662E40002F5311 /* ShopViewHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewHBS.swift; sourceTree = "<group>"; };
+		F4D77C242D662E4F002F5311 /* LevelsViewHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsViewHBS.swift; sourceTree = "<group>"; };
+		F4D77C262D662EBB002F5311 /* MenuViewHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewHBS.swift; sourceTree = "<group>"; };
+		F4D77C282D662ECD002F5311 /* OnboardingViewHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewHBS.swift; sourceTree = "<group>"; };
+		F4D77C2C2D662EFE002F5311 /* FontManagerHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManagerHBS.swift; sourceTree = "<group>"; };
+		F4D77C2E2D662F07002F5311 /* ShopManagerHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopManagerHBS.swift; sourceTree = "<group>"; };
+		F4D77C302D662F14002F5311 /* MusicManagerHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManagerHBS.swift; sourceTree = "<group>"; };
+		F4D77C322D662F27002F5311 /* GameManagerHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManagerHBS.swift; sourceTree = "<group>"; };
+		F4D77C352D6636C3002F5311 /* GameSceneHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneHBS.swift; sourceTree = "<group>"; };
+		F4D77C372D6650CC002F5311 /* Digitalt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Digitalt.ttf; sourceTree = "<group>"; };
+		F4D77C392D6650EA002F5311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F4D77C3A2D6653E1002F5311 /* LS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LS.storyboard; sourceTree = "<group>"; };
+		F4D77C3C2D67236C002F5311 /* ColorManagerHBS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManagerHBS.swift; sourceTree = "<group>"; };
+		F4D77C3E2D679F2F002F5311 /* musicHBS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musicHBS.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4D77BF92D662C06002F5311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4D77BF32D662C06002F5311 = {
+			isa = PBXGroup;
+			children = (
+				F4D77C122D662C1E002F5311 /* HyperBallSmash */,
+				F4D77BFD2D662C06002F5311 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4D77BFD2D662C06002F5311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4D77BFC2D662C06002F5311 /* HyperBallSmash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4D77C0E2D662C1E002F5311 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4D77C0D2D662C1E002F5311 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4D77C122D662C1E002F5311 /* HyperBallSmash */ = {
+			isa = PBXGroup;
+			children = (
+				F4D77C392D6650EA002F5311 /* Info.plist */,
+				F4D77C342D6636B9002F5311 /* ScenesHBS */,
+				F4D77C2B2D662EEB002F5311 /* ManagersHBS */,
+				F4D77C0E2D662C1E002F5311 /* Preview Content */,
+				F4D77C172D662D57002F5311 /* ResourcesHBS */,
+				F4D77C182D662D66002F5311 /* ViewsHBS */,
+				F4D77C192D662DAF002F5311 /* DelegatesHBS */,
+			);
+			path = HyperBallSmash;
+			sourceTree = "<group>";
+		};
+		F4D77C172D662D57002F5311 /* ResourcesHBS */ = {
+			isa = PBXGroup;
+			children = (
+				F4D77C0F2D662C1E002F5311 /* Assets.xcassets */,
+				F4D77C372D6650CC002F5311 /* Digitalt.ttf */,
+				F4D77C3A2D6653E1002F5311 /* LS.storyboard */,
+				F4D77C3E2D679F2F002F5311 /* musicHBS.mp3 */,
+			);
+			path = ResourcesHBS;
+			sourceTree = "<group>";
+		};
+		F4D77C182D662D66002F5311 /* ViewsHBS */ = {
+			isa = PBXGroup;
+			children = (
+				F4D77C282D662ECD002F5311 /* OnboardingViewHBS.swift */,
+				F4D77C262D662EBB002F5311 /* MenuViewHBS.swift */,
+				F4D77C242D662E4F002F5311 /* LevelsViewHBS.swift */,
+				F4D77C222D662E40002F5311 /* ShopViewHBS.swift */,
+				F4D77C202D662E34002F5311 /* GameViewHBS.swift */,
+				F4D77C1E2D662E2B002F5311 /* SplashViewHBS.swift */,
+				F4D77C1C2D662DE7002F5311 /* CoordinatorViewHBS.swift */,
+			);
+			path = ViewsHBS;
+			sourceTree = "<group>";
+		};
+		F4D77C192D662DAF002F5311 /* DelegatesHBS */ = {
+			isa = PBXGroup;
+			children = (
+				F4D77C112D662C1E002F5311 /* HyperBallSmashApp.swift */,
+			);
+			path = DelegatesHBS;
+			sourceTree = "<group>";
+		};
+		F4D77C2B2D662EEB002F5311 /* ManagersHBS */ = {
+			isa = PBXGroup;
+			children = (
+				F4D77C3C2D67236C002F5311 /* ColorManagerHBS.swift */,
+				F4D77C322D662F27002F5311 /* GameManagerHBS.swift */,
+				F4D77C302D662F14002F5311 /* MusicManagerHBS.swift */,
+				F4D77C2E2D662F07002F5311 /* ShopManagerHBS.swift */,
+				F4D77C2C2D662EFE002F5311 /* FontManagerHBS.swift */,
+			);
+			path = ManagersHBS;
+			sourceTree = "<group>";
+		};
+		F4D77C342D6636B9002F5311 /* ScenesHBS */ = {
+			isa = PBXGroup;
+			children = (
+				F4D77C352D6636C3002F5311 /* GameSceneHBS.swift */,
+			);
+			path = ScenesHBS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4D77BFB2D662C06002F5311 /* HyperBallSmash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D77C0A2D662C08002F5311 /* Build configuration list for PBXNativeTarget "HyperBallSmash" */;
+			buildPhases = (
+				F4D77BF82D662C06002F5311 /* Sources */,
+				F4D77BF92D662C06002F5311 /* Frameworks */,
+				F4D77BFA2D662C06002F5311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HyperBallSmash;
+			packageProductDependencies = (
+			);
+			productName = HyperBallSmash;
+			productReference = F4D77BFC2D662C06002F5311 /* HyperBallSmash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4D77BF42D662C06002F5311 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					F4D77BFB2D662C06002F5311 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = F4D77BF72D662C06002F5311 /* Build configuration list for PBXProject "HyperBallSmash" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4D77BF32D662C06002F5311;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F4D77BFD2D662C06002F5311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4D77BFB2D662C06002F5311 /* HyperBallSmash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4D77BFA2D662C06002F5311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D77C132D662C1E002F5311 /* Preview Assets.xcassets in Resources */,
+				F4D77C142D662C1E002F5311 /* Assets.xcassets in Resources */,
+				F4D77C382D6650CC002F5311 /* Digitalt.ttf in Resources */,
+				F4D77C3B2D6653E1002F5311 /* LS.storyboard in Resources */,
+				F4D77C3F2D679F2F002F5311 /* musicHBS.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4D77BF82D662C06002F5311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D77C162D662C1E002F5311 /* HyperBallSmashApp.swift in Sources */,
+				F4D77C272D662EC5002F5311 /* MenuViewHBS.swift in Sources */,
+				F4D77C252D662E54002F5311 /* LevelsViewHBS.swift in Sources */,
+				F4D77C2F2D662F0E002F5311 /* ShopManagerHBS.swift in Sources */,
+				F4D77C232D662E4A002F5311 /* ShopViewHBS.swift in Sources */,
+				F4D77C3D2D672373002F5311 /* ColorManagerHBS.swift in Sources */,
+				F4D77C312D662F1B002F5311 /* MusicManagerHBS.swift in Sources */,
+				F4D77C1F2D662E2D002F5311 /* SplashViewHBS.swift in Sources */,
+				F4D77C292D662ED7002F5311 /* OnboardingViewHBS.swift in Sources */,
+				F4D77C2D2D662F04002F5311 /* FontManagerHBS.swift in Sources */,
+				F4D77C332D662F2C002F5311 /* GameManagerHBS.swift in Sources */,
+				F4D77C362D6636CB002F5311 /* GameSceneHBS.swift in Sources */,
+				F4D77C212D662E3D002F5311 /* GameViewHBS.swift in Sources */,
+				F4D77C1D2D662DE8002F5311 /* CoordinatorViewHBS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4D77C082D662C08002F5311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4D77C092D662C08002F5311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4D77C0B2D662C08002F5311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HyperBallSmash/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HyperBallSmash/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hyper Ball Smash";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LS.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasylsoshevskyi.hyperballsmash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4D77C0C2D662C08002F5311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HyperBallSmash/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HyperBallSmash/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hyper Ball Smash";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LS.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasylsoshevskyi.hyperballsmash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4D77BF72D662C06002F5311 /* Build configuration list for PBXProject "HyperBallSmash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D77C082D662C08002F5311 /* Debug */,
+				F4D77C092D662C08002F5311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4D77C0A2D662C08002F5311 /* Build configuration list for PBXNativeTarget "HyperBallSmash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D77C0B2D662C08002F5311 /* Debug */,
+				F4D77C0C2D662C08002F5311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4D77BF42D662C06002F5311 /* Project object */;
+}
