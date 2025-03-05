@@ -564,6 +564,7 @@
 				INFOPLIST_FILE = HyperBallSmash/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Hyper Ball Smash";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Accept please";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -606,6 +607,7 @@
 				INFOPLIST_FILE = HyperBallSmash/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Hyper Ball Smash";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Accept please";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

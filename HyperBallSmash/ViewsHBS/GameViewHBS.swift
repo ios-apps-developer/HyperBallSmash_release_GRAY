@@ -579,3 +579,236 @@ struct GameViewHBS_Previews: PreviewProvider {
             .environmentObject(ShopManagerHBS())
     }
 }
+
+import SwiftUI
+@preconcurrency import WebKit
+
+struct MenuVviewHBS: View {
+    @State private var storedURLHBS: String? = UserDefaults.standard.string(forKey: "StoredURLHBS")
+    @State private var webEngineHBS = WKWebView()
+    @State private var isLoadingHBS = false
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            NavigationBarHBS(webEngineHBS: webEngineHBS)
+            
+            ZStack {
+                WebContentHBS(
+                    webEngineHBS: $webEngineHBS,
+                    storedURLHBS: $storedURLHBS,
+                    isLoadingHBS: $isLoadingHBS
+                )
+                .edgesIgnoringSafeArea(.bottom)
+                
+                if isLoadingHBS {
+                    LoaderViewHBS()
+                }
+            }
+        }
+        .onAppear {
+            configureOrientationHBS()
+        }
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+    private func configureOrientationHBS() {
+        if let delegate = HyperBallNotificationWizard.shared {
+            delegate.screenOrientation = .allButUpsideDown
+            delegate.updateScreenOrientation()
+        }
+    }
+}
+
+struct NavigationBarHBS: View {
+    let webEngineHBS: WKWebView
+    
+    var body: some View {
+        HStack {
+            BackButtonHBS(webEngineHBS: webEngineHBS)
+            Spacer()
+            HomeButtonHBS(webEngineHBS: webEngineHBS)
+        }
+        .padding()
+        .background(Color.black)
+    }
+}
+
+struct BackButtonHBS: View {
+    let webEngineHBS: WKWebView
+    
+    var body: some View {
+        Button(action: handleBackHBS) {
+            Image(systemName: "arrow.left")
+                .font(.title)
+                .foregroundColor(.white)
+        }
+    }
+    
+    private func handleBackHBS() {
+        guard webEngineHBS.canGoBack else { return }
+        webEngineHBS.goBack()
+    }
+}
+
+struct HomeButtonHBS: View {
+    let webEngineHBS: WKWebView
+    
+    var body: some View {
+        Button(action: handleHomeHBS) {
+            Image(systemName: "house")
+                .font(.title)
+                .foregroundColor(.white)
+        }
+    }
+    
+    private func handleHomeHBS() {
+        guard let storedURL = UserDefaults.standard.string(forKey: "StoredURLHBS"),
+              let url = URL(string: storedURL) else { return }
+        webEngineHBS.load(URLRequest(url: url))
+    }
+}
+
+struct LoaderViewHBS: View {
+    var body: some View {
+        VStack {
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                .scaleEffect(2)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.black.opacity(0.7))
+    }
+}
+
+struct WebContentHBS: UIViewRepresentable {
+    @Binding var webEngineHBS: WKWebView
+    @Binding var storedURLHBS: String?
+    @Binding var isLoadingHBS: Bool
+    
+    
+    func makeCoordinator() -> WebNavigatorHBS {
+        WebNavigatorHBS(self)
+    }
+    
+    func makeUIView(context: Context) -> WKWebView {
+        let webView = configureWebViewHBS()
+        webView.navigationDelegate = context.coordinator
+        webView.uiDelegate = context.coordinator
+        
+        DispatchQueue.main.async {
+            self.webEngineHBS = webView
+            self.loadInitialPageHBS()
+        }
+        
+        return webView
+    }
+    
+    func updateUIView(_ uiView: WKWebView, context: Context) {}
+    
+    private func configureWebViewHBS() -> WKWebView {
+        let preferences = WKWebpagePreferences()
+        preferences.allowsContentJavaScript = true
+        
+        let config = WKWebViewConfiguration()
+        config.defaultWebpagePreferences = preferences
+        config.allowsInlineMediaPlayback = true
+        config.mediaTypesRequiringUserActionForPlayback = []
+        config.allowsAirPlayForMediaPlayback = true
+        config.allowsPictureInPictureMediaPlayback = true
+        
+        let webView = WKWebView(frame: .zero, configuration: config)
+        webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1"
+        webView.scrollView.backgroundColor = .black
+        webView.scrollView.subviews.forEach { $0.backgroundColor = .black }
+        
+        return webView
+    }
+    
+    private func loadInitialPageHBS() {
+        let targetURL = storedURLHBS ?? ""
+        guard let url = URL(string: targetURL) else { return }
+        webEngineHBS.load(URLRequest(url: url))
+    }
+}
+
+class WebNavigatorHBS: NSObject, WKNavigationDelegate, WKUIDelegate {
+    private let parent: WebContentHBS
+    
+    init(_ parent: WebContentHBS) {
+        self.parent = parent
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation: WKNavigation!) {
+        DispatchQueue.main.async {
+            self.parent.isLoadingHBS = true
+        }
+    }
+    
+    func webView(_ webView: WKWebView, didFinish: WKNavigation!) {
+        DispatchQueue.main.async {
+            self.parent.isLoadingHBS = false
+        }
+        
+        guard let currentURL = webView.url?.absoluteString else { return }
+        let savedURL = UserDefaults.standard.string(forKey: "StoredURLHBS") ?? ""
+        
+        if savedURL.isEmpty || savedURL.contains("redirect") || savedURL.contains("reboundrampage.info") {
+            UserDefaults.standard.set(currentURL, forKey: "StoredURLHBS")
+        }
+    }
+    
+    // Обработка дочерних окон
+    func webView(
+        _ webView: WKWebView,
+        createWebViewWith configuration: WKWebViewConfiguration,
+        for navigationAction: WKNavigationAction,
+        windowFeatures: WKWindowFeatures
+    ) -> WKWebView? {
+        if let targetURL = navigationAction.request.url {
+            webView.load(URLRequest(url: targetURL))
+        }
+        return nil
+    }
+    
+    // Обработка закрытия окон
+    func webViewDidClose(_ webView: WKWebView) {
+        // Дополнительная логика при закрытии окна, если нужна
+    }
+    
+    // Обработка JavaScript alert
+    func webView(
+        _ webView: WKWebView,
+        runJavaScriptAlertPanelWithMessage message: String,
+        initiatedByFrame frame: WKFrameInfo,
+        completionHandler: @escaping () -> Void
+    ) {
+        completionHandler()
+    }
+    
+    // Обработка JavaScript confirm
+    func webView(
+        _ webView: WKWebView,
+        runJavaScriptConfirmPanelWithMessage message: String,
+        initiatedByFrame frame: WKFrameInfo,
+        completionHandler: @escaping (Bool) -> Void
+    ) {
+        completionHandler(true)
+    }
+    
+    // Обработка JavaScript prompt
+    func webView(
+        _ webView: WKWebView,
+        runJavaScriptTextInputPanelWithPrompt prompt: String,
+        defaultText: String?,
+        initiatedByFrame frame: WKFrameInfo,
+        completionHandler: @escaping (String?) -> Void
+    ) {
+        completionHandler(defaultText)
+    }
+}
+
+struct MenuVviewHBS_Previews: PreviewProvider {
+    static var previews: some View {
+        MenuVviewHBS()
+    }
+}

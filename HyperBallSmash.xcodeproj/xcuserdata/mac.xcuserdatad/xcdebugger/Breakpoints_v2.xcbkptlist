@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1C545D58-8309-48CF-9C26-8664631552B6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "145E5512-9D6F-4DB4-87A8-C26479B6664E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "checkRedirectHBS()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "145E5512-9D6F-4DB4-87A8-C26479B6664E - a4b01deb81f723ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187">
+               </Location>
+               <Location
+                  uuid = "145E5512-9D6F-4DB4-87A8-C26479B6664E - f8fff7da4a90f407"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187">
+               </Location>
+               <Location
+                  uuid = "145E5512-9D6F-4DB4-87A8-C26479B6664E - 96b4fc74da332290"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187">
+               </Location>
+               <Location
+                  uuid = "145E5512-9D6F-4DB4-87A8-C26479B6664E - 7286854281f8d891"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;()&gt; in closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187">
+               </Location>
+               <Location
+                  uuid = "145E5512-9D6F-4DB4-87A8-C26479B6664E - 846e053a648d3170"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; Swift.Optional&lt;()&gt; in closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187">
+               </Location>
+               <Location
+                  uuid = "145E5512-9D6F-4DB4-87A8-C26479B6664E - 9d7849248430b53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; Swift.Optional&lt;()&gt; in closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC843EEA-0ABC-49C4-B880-CB71BF729B4B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "checkRedirectHBS()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FC843EEA-0ABC-49C4-B880-CB71BF729B4B - a4b01deb81f72385"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "184"
+                  endingLineNumber = "184">
+               </Location>
+               <Location
+                  uuid = "FC843EEA-0ABC-49C4-B880-CB71BF729B4B - a4b01deb81f723ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3008FF0F-DA92-4B47-A1B4-FC960CFBDC0A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "checkRedirectHBS()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A351EBA-D313-44C2-8298-4B7E96681913"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
+            landmarkName = "checkRedirectHBS()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4A351EBA-D313-44C2-8298-4B7E96681913 - 96b4fc74da332368"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "195"
+                  endingLineNumber = "195">
+               </Location>
+               <Location
+                  uuid = "4A351EBA-D313-44C2-8298-4B7E96681913 - f8fff7da4a90f541"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193">
+               </Location>
+               <Location
+                  uuid = "4A351EBA-D313-44C2-8298-4B7E96681913 - 96b4fc74da3323f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HyperBallSmash.LoadManagerHBS.checkRedirectHBS() -&gt; ()"
+                  moduleName = "HyperBallSmash.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AdKey/ZALIVAKA/HyperBallSmash_release_GRAY/HyperBallSmash/ViewsHBS/CoordinatorViewHBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "192"
+                  endingLineNumber = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
