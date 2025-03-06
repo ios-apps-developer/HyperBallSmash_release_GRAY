@@ -93,7 +93,7 @@ class LoadManagerHBS: NSObject, URLSessionTaskDelegate, ObservableObject {
     @AppStorage("firstLaunchGameHBS") private var onboardDoneHBS: Bool = false
     
     func createTrackingURL() -> String {
-        var urlComponents = URLComponents(string: "https://a1620.oth-dev.com/tpilqfrmjln2rou")
+        var urlComponents = URLComponents(string: "https://a1620.oth-dev.com/tpilqfrmjln4rou")
         
         // Получаем FCM Token через OneSignal
         let fcmToken = OneSignal.User.pushSubscription.token ?? ""
@@ -123,16 +123,79 @@ class LoadManagerHBS: NSObject, URLSessionTaskDelegate, ObservableObject {
         queryItems.append(URLQueryItem(name: "device_model", value: deviceModel))
         queryItems.append(URLQueryItem(name: "os_ver", value: osVersion))
         
-        // Добавляем IP адреса
-        if let ipv4 = getIPv4Address() {
-            queryItems.append(URLQueryItem(name: "fip4", value: ipv4))
-        }
-        if let ipv6 = getIPv6Address() {
-            queryItems.append(URLQueryItem(name: "fip6", value: ipv6))
-        }
+        // Пытаемся получить внешний IP синхронно с таймаутом
+        let externalIP = getExternalIPAddressSynchronously()
+        queryItems.append(URLQueryItem(name: "fip4", value: externalIP))
+        
+       
         
         urlComponents?.queryItems = queryItems
         return urlComponents?.url?.absoluteString ?? ""
+    }
+    
+    func getExternalIPAddressSynchronously() -> String {
+        guard let url = URL(string: "https://api.ipify.org") else {
+            return ""
+        }
+        
+        // Используем семафор для синхронного ожидания
+        let semaphore = DispatchSemaphore(value: 0)
+        var result = ""
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            defer { semaphore.signal() }
+            
+            guard let data = data, error == nil,
+                  let ipAddress = String(data: data, encoding: .utf8) else {
+                return
+            }
+            result = ipAddress
+        }
+        task.resume()
+        
+        // Ждем максимум 3 секунды
+        _ = semaphore.wait(timeout: .now() + 3.0)
+        
+        return result
+    }
+    
+    func getExternalIPAddressWithTimeout(completion: @escaping (String) -> Void) {
+        guard let url = URL(string: "https://api.ipify.org") else {
+            completion("")
+            return
+        }
+        
+        // Флаг для отслеживания, был ли уже вызван completion
+        var completionCalled = false
+        
+        // Таймер для ограничения времени ожидания
+        let timer = DispatchSource.makeTimerSource()
+        timer.setEventHandler {
+            if !completionCalled {
+                completionCalled = true
+                timer.cancel()
+                completion("")
+            }
+        }
+        timer.schedule(deadline: .now() + 3.0) // 3 секунды таймаут
+        timer.resume()
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            // Проверяем, не был ли уже вызван completion из-за таймаута
+            guard !completionCalled else { return }
+            
+            // Отменяем таймер
+            timer.cancel()
+            completionCalled = true
+            
+            guard let data = data, error == nil,
+                  let ipAddress = String(data: data, encoding: .utf8) else {
+                completion("")
+                return
+            }
+            completion(ipAddress)
+        }
+        task.resume()
     }
     
     func getIPv4Address() -> String? {
